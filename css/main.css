@@ -3,9 +3,23 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.container {
-    display: flex; /** set the container as flexbox **/
-    align-items: center; /** align all items vertically **/
+header {
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+.content {
+  margin-top: 200px;
+}
+
+/*#region Menu Container Start*/
+.menuContainer {
+    display: flex;
+    align-items: center; 
     margin-bottom: 10px;
     position: sticky;
     top: 0;
@@ -14,19 +28,20 @@ body {
     z-index: 1;
   }
 
-.container ul li {
+.menuContainer ul li {
     list-style-type: none;
     display: inline-block;
     margin-right: 15mm;
 } 
 
-.container ul li a {
+.menuContainer ul li a {
   background-image: linear-gradient(
     to right,
     #f6df10,
     #f6df10 50%,
     #000 50%
   );
+  font-size: 16px;
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -37,7 +52,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.container ul li a:before {
+.menuContainer ul li a:before {
   content: '';
   background: #f6df10;
   display: block;
@@ -49,26 +64,32 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.container ul li a:hover {
+.menuContainer ul li a:hover {
   background-position: 0;
 }
 
-.container ul li a:hover::before {
+.menuContainer ul li a:hover::before {
   width:100%;
 }
-
-header {
-    font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/*#endregion Menu Container Ende*/
   
-.logo {
+.menuLogo {
     margin-left: 5mm;
   }
 
-html{
-    scroll-behavior: smooth;
-  }
+.menuBtn {
+  height: 30px;
+  width: 150px; 
+  background-color: transparent;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.menuBtn:hover {
+  background-color: #f6df10;
+  transition: all 0.75s;
+}
 
 .sectionHeader {
   font-size: 28px;
@@ -101,7 +122,7 @@ html{
   font-weight: bold;
 }
 
-/*Request Button Start*/
+/*#region Request Button Start*/
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 .SendRequestCenter {
@@ -145,4 +166,68 @@ html{
   font-size: 16px;
   font-weight: 100;
 }
-/*Request Button Ende*/
+/*#endregion Request Button Ende*/
+
+/*#region Anfrage Button Start*/
+
+.anfrageBtnWrapper{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.anfrageBtnLink_wrapper{
+  position: relative;
+}
+
+.anfrageBtn{
+  display: block;
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+
+.anfrageBtnIcon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.anfrageBtnIcon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #f6df10;
+  transition: all .35s;
+}
+
+.anfrageBtn:hover{
+  width: 230px;
+  border: 3px solid #f6df10;
+  background: transparent;
+  color: #f6df10;
+}
+
+.anfrageBtn:hover + .anfrageBtnIcon{
+  border: 3px solid #f6df10;
+  right: -25%;
+}
+/*#endregion Anfrage Button Ende*/
