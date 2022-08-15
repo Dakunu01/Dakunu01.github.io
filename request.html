@@ -21,44 +21,37 @@
         <div>
             <p class="sectionHeader">ANFRAGE TEXT</p>
         </div>
-
-        <div class="container">
-            <div>
-                <p class="requestHeader">Name</p>
-                <input class="requestInput">
-                <p class="requestHeader">E-Mail</p>
-                <input class="requestInput">
-                <p class="requestHeader">Telefon</p>
-                <input class="requestInput">
-                <p class="requestHeader">Straße</p>
-                <input class="requestInput">
-                <p class="requestHeader">PLZ, Ort</p>
-                <input class="requestInput">
-            </div>
-            <div>
-                <p class="requestHeader">Ferienwohnung</p>
-                <select class="requestInput">
-                    <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
-                    <option value="Juchee (90m²)">Juchee (90m²)</option>
-                    <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
-                </select>
-                <p class="requestHeader">Erwachsene</p>
-                <input class="requestInput">
-                <p class="requestHeader">Anzahl Kinder</p>
-                <input class="requestInput">
-            </div>
-        </div>
-
         <form action="https://formspree.io/f/mpznzylq" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
+            <div class="container">
+                <div>
+                    <p class="requestHeader">Name</p>
+                    <input name="Name" class="requestInput">
+                    <p class="requestHeader">E-Mail</p>
+                    <input name="email" class="requestInput">
+                    <p class="requestHeader">Telefon</p>
+                    <input name="Telefonnumber" class="requestInput">
+                    <p class="requestHeader">Straße</p>
+                    <input name="Street" class="requestInput">
+                    <p class="requestHeader">PLZ, Ort</p>
+                    <input name="Ort" class="requestInput">
+                </div>
+                <div>
+                    <p class="requestHeader">Ferienwohnung</p>
+                    <select class="requestInput">
+                        <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
+                        <option value="Juchee (90m²)">Juchee (90m²)</option>
+                        <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
+                    </select>
+                    <p class="requestHeader">Erwachsene</p>
+                    <input class="requestInput">
+                    <p class="requestHeader">Anzahl Kinder</p>
+                    <input class="requestInput">
+                </div>
+        
+                <label>
+                    <textarea name="message"></textarea>
+                </label>
+            </div>
             <button type="submit">Send</button>
         </form>
     </body>
