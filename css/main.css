@@ -9,7 +9,11 @@ header {
 }
 
 html{
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body{
+  scroll-behavior: smooth;
 }
 
 .content {
@@ -132,8 +136,8 @@ scroll-behavior: smooth;
 }
 
 .SendRequestBtn {
-  width: 200px;
-  height: 40px;
+  width: 180px;
+  height: 60px;
   cursor: pointer;
   background: transparent;
   border: 1px solid #030a10;
@@ -146,7 +150,7 @@ scroll-behavior: smooth;
   left: 0;
   top: 0;
   fill: none;
-  stroke: #fff;
+  stroke: #000;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
