@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>VITALHOF Roithinger in Schlüßelberg</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo" src="images/vitalhof_logo_289x155px.png"/>
+            <ul>
+                <li><a href="index.html#divVitalhof">Der Vitalhof</a></li>
+                <li><a href="index.html#divWohnungen">Wohnungen</a></li>
+                <li><a href="index.html#divAktivitaeten">Aktivitäten</a></li>
+                <li><a href="index.html#divGalerie">Galerie</a></li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+
+            <button onclick="window.location.href = 'request.html'">Anfrage/Buchen</button>
+        </div>
+
+        <div>
+            <p class="sectionHeader">ANFRAGE TEXT</p>
+        </div>
+
+        <div class="container">
+            <div>
+                <p class="requestHeader">Name</p>
+                <input class="requestInput">
+                <p class="requestHeader">E-Mail</p>
+                <input class="requestInput">
+                <p class="requestHeader">Telefon</p>
+                <input class="requestInput">
+                <p class="requestHeader">Straße</p>
+                <input class="requestInput">
+                <p class="requestHeader">PLZ, Ort</p>
+                <input class="requestInput">
+            </div>
+            <div>
+                <p class="requestHeader">Ferienwohnung</p>
+                <select class="requestInput">
+                    <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
+                    <option value="Juchee (90m²)">Juchee (90m²)</option>
+                    <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
+                </select>
+                <p class="requestHeader">Erwachsene</p>
+                <input class="requestInput">
+                <p class="requestHeader">Anzahl Kinder</p>
+                <input class="requestInput">
+            </div>
+        </div>
+
+        
+        <form action="http://formspree.io/your@email.com" method="post">
+            <label for="email">Your Email</label>
+            <input name="Email" id="email" type="email">
+            <button type="submit">Submit</button>
+          </form>
+    </body>
+</html>
