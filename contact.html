@@ -12,7 +12,7 @@
                 <li><a href="index.html#divWohnungen">Wohnungen</a></li>
                 <li><a href="index.html#divAktivitaeten">Aktivitäten</a></li>
                 <li><a href="index.html#divGalerie">Galerie</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
             </ul>
 
             <button onclick="window.location.href = 'request.html'">Anfrage/Buchen</button>
@@ -23,15 +23,7 @@
         </div>
 
         <div>
-            <iframe
-                width="600"
-                height="450"
-                style="border:0"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=API_KEY&q=Space+Needle,Seattle+WA">
-            </iframe>
+            <p class="ToDo">To-Do: Embed Google Maps iFrame</p>
         </div>
 
         <form action="https://formspree.io/f/mpznzylq" method="POST">
@@ -55,7 +47,18 @@
                         <textarea class="requestInput" style="height: 150px;" name="Nachricht"></textarea>
                 </div>
             </div>
-            <button type="submit">Anfrage Senden</button>
+            <br><br>
+            <div class="container">
+                <div class="SendRequestCenter">
+                  <button type="submit" class="SendRequestBtn">
+                    <svg class="SendRequestSvg" width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                      <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>Anfrage Senden</span>
+                  </button>
+                </div>
+              </div>
         </form>
     </body>
 </html>

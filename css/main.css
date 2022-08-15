@@ -21,7 +21,40 @@ body {
 } 
 
 .container ul li a {
-    color: black;
+  background-image: linear-gradient(
+    to right,
+    #f6df10,
+    #f6df10 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.container ul li a:before {
+  content: '';
+  background: #f6df10;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container ul li a:hover {
+  background-position: 0;
+}
+
+.container ul li a:hover::before {
+  width:100%;
 }
 
 header {
@@ -31,12 +64,6 @@ header {
   
 .logo {
     margin-left: 5mm;
-    /**
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
-    **/
   }
 
 html{
@@ -67,4 +94,53 @@ html{
   height: 30px;
   width: 300px;
 }
-  
+
+.ToDo{
+  font-size: 14px;
+  color: rgb(180, 41, 41);
+  font-weight: bold;
+}
+
+/*Request Button Start*/
+.SendRequestCenter {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.SendRequestBtn {
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #030a10;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.SendRequestSvg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.SendRequestBtn:hover {
+  transition: 1s ease-in-out;
+  background: #f6df10;
+}
+
+.SendRequestBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.SendRequestBtn span {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 100;
+}
+/*Request Button Ende*/
