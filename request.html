@@ -24,29 +24,32 @@
         <form action="https://formspree.io/f/mpznzylq" method="POST">
             <div class="container">
                 <div>
+                    <input name="Form" style="visibility: hidden;" value="Anfrage">
                     <p class="requestHeader">Name</p>
-                    <input name="Name" class="requestInput">
+                        <input name="Name" class="requestInput">
                     <p class="requestHeader">E-Mail</p>
-                    <input name="E-Mail" class="requestInput">
+                        <input name="E-Mail" class="requestInput">
                     <p class="requestHeader">Telefon</p>
-                    <input name="Telefonnummer" class="requestInput">
+                        <input name="Telefonnummer" class="requestInput">
                     <p class="requestHeader">Straße</p>
-                    <input name="Straße" class="requestInput">
+                        <input name="Straße" class="requestInput">
                     <p class="requestHeader">PLZ, Ort</p>
-                    <input name="PLZ, Ort" class="requestInput">
+                        <input name="PLZ, Ort" class="requestInput">
                     <p class="requestHeader">Ferienwohnung</p>
-                    <select name="Wohnung" class="requestInput">
-                        <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
-                        <option value="Juchee (90m²)">Juchee (90m²)</option>
-                        <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
-                    </select>
+                        <select name="Wohnung" class="requestInput">
+                            <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
+                            <option value="Juchee (90m²)">Juchee (90m²)</option>
+                            <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
+                        </select>
                     <p class="requestHeader">Erwachsene</p>
-                    <input name="Anzahl Erwachsene" class="requestInput">
+                        <input name="Anzahl Erwachsene" class="requestInput">
                     <p class="requestHeader">Anzahl Kinder</p>
-                    <input name="Anzahl Kinder" class="requestInput">
+                        <input name="Anzahl Kinder" class="requestInput">
+                    <p class="requestHeader">Nachricht</p>
+                        <textarea class="requestInput" style="height: 150px;" name="Nachricht"></textarea>
                 </div>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit">Anfrage Senden</button>
         </form>
     </body>
 </html>

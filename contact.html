@@ -19,7 +19,31 @@
         </div>
 
         <div>
-            
+            <p class="sectionHeader">ANFRAGE TEXT</p>
         </div>
+
+        <form action="https://formspree.io/f/mpznzylq" method="POST">
+            <div class="container">
+                <div>
+                    <input name="Form" style="visibility: hidden;" value="Kontakt">
+                    <p class="requestHeader">Name*</p>
+                        <input name="Name" class="requestInput">
+                    <p class="requestHeader">E-Mail*</p>
+                        <input name="E-Mail" class="requestInput">
+                    <p class="requestHeader">Telefon</p>
+                        <input name="Telefonnummer" class="requestInput">
+                    <p class="requestHeader">Interesse an Ferienwohnung...</p>
+                        <select name="Wohnung" class="requestInput">
+                            <option value="Keine">Keiner</option>
+                            <option value="Hofstüberl (60m²)">Hofstüberl (60m²)</option>
+                            <option value="Juchee (90m²)">Juchee (90m²)</option>
+                            <option value="Kaminstube (120m²)">Kaminstube (120m²)</option>
+                        </select>
+                    <p class="requestHeader">Nachricht</p>
+                        <textarea class="requestInput" style="height: 150px;" name="Nachricht"></textarea>
+                </div>
+            </div>
+            <button type="submit">Anfrage Senden</button>
+        </form>
     </body>
 </html>
