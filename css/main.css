@@ -1,6 +1,7 @@
 body {
-    background: #263930;
-    font-family: Arial, Helvetica, sans-serif
+  height: 100%;
+  background: rgb(38, 57, 48, 0.75);
+  font-family: Arial, Helvetica, sans-serif
 }
 
 header {
@@ -17,18 +18,49 @@ body{
   margin: 0px;
 }
 
-.pageWarp{
+.pageWrap{
+  position: relative;
+}
+
+.treeDiv{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.treePic {
+  width: 100%; 
+  position: relative;
+  display: block;
+  float: left;
+  opacity: 0.8;
+  -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+.innerPageWarp{
   display: flexbox;
   border-radius: 35px;
-  background-color: rgba(255, 255, 255, 0.65);
-  max-width: 75%;
-  padding: 0.5% 3% 5.5%;
-  margin-top: 15% !important;
-  margin: 7.5% 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 60%;
+  margin: 7.5% 20%;
+}
+
+.innerPageWarpMain{
+  margin-top: 13% !important;
+  padding: 1% 2.5% 1% 2.5%;
+}
+
+.innerPageWarpSecond {
+  margin-top: 5% !important;
+  padding: 1% 2.5% 90px 2.5%;
 }
 
 .content div{
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  z-index: 10;
 }
 
 /*#region Menu Container Start*/
@@ -142,7 +174,7 @@ body{
 }
 
 .widePic{
-  width: 100%;
+  width: 95%;
 }
 
 .ToDo{
@@ -183,7 +215,7 @@ body{
 
 .SendRequestBtn:hover {
   transition: 1s ease-in-out;
-  background: #ffb955;
+  background: rgba(98, 75, 42, 0.5);
 }
 
 .SendRequestBtn:hover svg {
@@ -201,7 +233,7 @@ body{
 
 .anfrageBtnWrapper{
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -230,7 +262,7 @@ body{
   width: 50px;
   height: 50px;
   border: 3px solid transparent;
-  position: absolute;
+  position: fixed;
   transform: rotate(45deg);
   right: 0;
   top: 0;
@@ -260,3 +292,37 @@ body{
   right: -25%;
 }
 /*#endregion Anfrage Button Ende*/
+
+/*#region BottomLane*/
+.bottomLane {
+  width: 100%;
+  bottom: 0 !important;
+  display: flex;
+  background-color: #202020;
+  color: #666666;
+  font-size: 7.5px;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.bottomLaneMain{
+}
+
+.bottomLaneSecond{
+  position: fixed;
+}
+
+.bottomLane div{
+}
+
+.bottomLanePics{
+  display: flex;
+}
+
+.bottomLanePic {
+  margin-left: 7.5%;
+  width: 80px;
+  height: 80px;
+}
+/*#endregion BottomLane*/
