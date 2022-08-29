@@ -1,5 +1,5 @@
 body {
-    background: rgb(255, 255, 255);
+    background: #263930;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -14,22 +14,39 @@ html{
 
 body{
   scroll-behavior: smooth;
+  margin: 0px;
 }
 
-.content {
-  margin-top: 200px;
+.pageWarp{
+  display: flexbox;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.65);
+  max-width: 75%;
+  padding: 0.5% 3% 5.5%;
+  margin-top: 15% !important;
+  margin: 7.5% 10%;
+}
+
+.content div{
+  margin-bottom: 50px;
 }
 
 /*#region Menu Container Start*/
 .menuContainer {
     display: flex;
-    align-items: center; 
-    margin-bottom: 10px;
+    align-items: center;
     position: sticky;
     top: 0;
     background: white;
-    width: 100%;
     z-index: 1;
+  }
+
+  .menuHorizontalCenter{
+    justify-content: right;
+    margin-right: 5%;
+    align-items: center;
+    width: 100%;
+    display: flex;
   }
 
 .menuContainer ul li {
@@ -41,8 +58,8 @@ body{
 .menuContainer ul li a {
   background-image: linear-gradient(
     to right,
-    #f6df10,
-    #f6df10 50%,
+    #ffb955,
+    #ffb955 50%,
     #000 50%
   );
   font-size: 16px;
@@ -58,7 +75,7 @@ body{
 
 .menuContainer ul li a:before {
   content: '';
-  background: #f6df10;
+  background: #ffb955;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -79,7 +96,10 @@ body{
   
 .menuLogo {
     margin-left: 5mm;
+    margin-bottom: 5mm;
   }
+
+/*#Menu Button*/
 
 .menuBtn {
   height: 30px;
@@ -91,9 +111,10 @@ body{
 }
 
 .menuBtn:hover {
-  background-color: #f6df10;
+  background-color: #ffb955;
   transition: all 0.75s;
 }
+/*#endregion Menu Button*/
 
 .sectionHeader {
   font-size: 28px;
@@ -118,6 +139,10 @@ body{
   outline: none;
   height: 30px;
   width: 300px;
+}
+
+.widePic{
+  width: 100%;
 }
 
 .ToDo{
@@ -158,7 +183,7 @@ body{
 
 .SendRequestBtn:hover {
   transition: 1s ease-in-out;
-  background: #f6df10;
+  background: #ffb955;
 }
 
 .SendRequestBtn:hover svg {
@@ -197,7 +222,7 @@ body{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 3px solid #333;
+  border: 3px solid rgba(94, 94, 94, 0.25);
   transition: all .35s;
 }
 
@@ -219,19 +244,19 @@ body{
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
-  fill: #f6df10;
+  fill: #ffb955;
   transition: all .35s;
 }
 
 .anfrageBtn:hover{
   width: 230px;
-  border: 3px solid #f6df10;
+  border: 3px solid #ffb955;
   background: transparent;
-  color: #f6df10;
+  color: #ffb955;
 }
 
 .anfrageBtn:hover + .anfrageBtnIcon{
-  border: 3px solid #f6df10;
+  border: 3px solid #ffb955;
   right: -25%;
 }
 /*#endregion Anfrage Button Ende*/
