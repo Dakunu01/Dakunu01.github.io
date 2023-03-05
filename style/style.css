@@ -12,7 +12,7 @@
 .topnav_logo {
   background-color: bisque;
   float: left;
-  width: 5%;
+  width: 12%;
 }
 
 .topnav_logo img {
@@ -22,7 +22,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav_links {
-  width: 52%;
+  width: 72%;
   background-color: #b91515;
   overflow: hidden;
   align-items: center;
