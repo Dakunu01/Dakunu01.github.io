@@ -6,17 +6,32 @@
   top: 0;
   background: green;
   z-index: 1;
+  width: 100%;
 }
 
 .topnav_logo {
+  background-color: bisque;
+  float: left;
+  width: 33%;
+}
+
+.topnav_logo img {
   max-width: 100%;
   max-height: 100%;
 }
 
 /* Add a black background color to the top navigation */
 .topnav_links {
-  background-color: #333;
+  width: 33%;
+  background-color: #b91515;
   overflow: hidden;
+  align-items: center;
+}
+
+.topnav_menu {
+  background-color: aqua;
+  float: right;
+  width: 33%;
 }
 
 /* Style the links inside the navigation bar */
