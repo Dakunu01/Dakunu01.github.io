@@ -4,18 +4,18 @@
 <html>
   <head>
     <title>Test Website</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/homepage-style.css" rel="stylesheet" type="text/css" />
     <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="topnav">
+    <div class="homepage_topnav">
       <div class="topnav_logo">
-        <a href="index.html#top">
+        <a href="#top">
           <img src="images/logos/vitalhof_logo_289x155px.png" />
         </a>
       </div>
       <div class="topnav_links">
-        <a href="">Der Vitalhof</a>
+        <a href="#top">Der Vitalhof</a>
         <a href="">Wohnungen</a>
         <a href="">Aktivitäten</a>
         <a href="">Galerie</a>
@@ -30,17 +30,17 @@
       <p>Der Vitalhof</p>
       <div class="insidePageMenu_links">
         <ul>
-          <li><a href="">Wohnungen</a></li>
-          <li><a href="">Ausstattung</a></li>
-          <li><a href="">Wellnessbereich</a></li>
-          <li><a href="">Unser Garten</a></li>
-          <li><a href="">Geschichte</a></li>
+          <li><a href="#homepage_wohnungen">Wohnungen</a></li>
+          <li><a href="#homepage_ausstattung">Ausstattung</a></li>
+          <li><a href="#homepage_wellness">Wellnessbereich</a></li>
+          <li><a href="#homepage_garten">Unser Garten</a></li>
+          <li><a href="#homepage_geschichte">Geschichte</a></li>
         </ul>
       </div>
       <br />
     </div>
-    <div class="homepage_generalInfo">
-      <div class="generalInfo_colorTextPlate">
+    <div class="homepage_general-info">
+      <div class="general-Info_colorTextPlate">
         <br />
         <p>
           Hello this is a test Text. This text does mean nothing, but so do we
@@ -53,16 +53,33 @@
         </p>
         <br />
       </div>
-      <div class="generalInfo_headlineContainer">
-        <br />
-        <br />
-        <p class="headlines">3 Wohnungen</p>
-        <p class="headlines">0 XxXxXxXxXxX</p>
-        <p class="headlines">1 XxXxXxXxXxX</p>
-        <p class="headlines">2 XxXxXxXxXxX</p>
-        <br />
+      <div class="general-Info-lowerSection">
+        <div class="general-info-pic">
+          <img src="images/summer/roi_landschaft1-642x335.jpg" />
+        </div>
+        <div class="general-Info-headlines">
+          <br />
+          <div class="headline-container">
+            <img class="headline-logo" src="images/logos/4blumen.png" />
+            <p class="headlines">3 Wohnungen</p>
+          </div>
+          <div class="headline-container">
+            <img class="headline-logo" src="images/logos/4blumen.png" />
+            <p class="headlines">3 Wohnungen</p>
+          </div>
+          <div class="headline-container">
+            <img class="headline-logo" src="images/logos/4blumen.png" />
+            <p class="headlines">3 Wohnungen</p>
+          </div>
+          <div class="headline-container">
+            <img class="headline-logo" src="images/logos/4blumen.png" />
+            <p class="headlines">3 Wohnungen</p>
+          </div>
+          <br />
+        </div>
       </div>
-      <p class="generalInfo_textContainer">
+      <br />
+      <p class="general-Info_textContainer">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -75,24 +92,24 @@
       </p>
       <br /><br />
     </div>
-    <div class="homepage_wohnungen">
+    <div id="homepage_wohnungen" class="homepage_wohnungen">
       <div class="hp_wohnungen_juchee">
         <br />
-        <p>Juchee</p>
-        <br>
+        <p class="headline">Juchee</p>
+        <br />
       </div>
       <div class="hp_wohnungen_kaminstube">
         <br />
-        <p>Kaminstube</p>
-        <br>
+        <p class="headline">Kaminstube</p>
+        <br />
       </div>
       <div class="hp_wohnungen_hofstueberl">
         <br />
-        <p>Hofstüberl</p>
-        <br>
+        <p class="headline">Hofstüberl</p>
+        <br />
       </div>
     </div>
-    <div class="homepage_ausstattung">
+    <div id="homepage_ausstattung" class="homepage_ausstattung">
       <br />
       <p class="headline">Ausstattung</p>
       <br />
@@ -111,6 +128,71 @@
         clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
       </p>
       <br />
+    </div>
+    <div id="homepage_wellness" class="homepage_wellness">
+      <div class="wellness-top-pic">
+        <p>Der Wellnessbereich</p>
+      </div>
+      <div class="wellness-lowerSection">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+    <div id="homepage_garten" class="homepage_garten">
+      <br />
+      <p class="headline">Der Garten</p>
+      <div class="garten-lowerSection">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <br />
+    </div>
+    <div id="homepage_geschichte" class="homepage_geschichte">
+      <br />
+      <p class="headline">Geschichte</p>
+      <br />
+    </div>
+    <div class="homepage_footer">
+      <div>
+        <p class="headline">Kontakt</p>
+        <p></p>
+        <p>Fürth 4</p>
+        <p>4707 Schlüsselberg</p>
+        <p>HIER TEL. NUMMER EINFÜGEN</p>
+        <p>office@vital-hof.com</p>
+      </div>
+      <div>
+        <img src="images/logos/vitalhof_logo_289x155px.png" />
+        <br />
+        <br />
+        <p>Copyright © 2023 Vitalhof Roithiner. Alle Rechte vorbehalten.</p>
+      </div>
+      <div>
+        <p class="headline">Quicklinks</p>
+        <p></p>
+        <p>IMPRESSUM</p>
+        <p>AGBS</p>
+        <p>DATENSCHUTZ</p>
+        <p>FAQS</p>
+      </div>
     </div>
   </body>
 </html>
