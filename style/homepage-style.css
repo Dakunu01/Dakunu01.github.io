@@ -1,7 +1,16 @@
 /**
  * @format
  */
+ @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+ :root {
+  /*Colors*/
+  --box-color: #F8DCB7;
+  --ausstattung-bg-color: #3E512D;
+
+  /*Fonts*/
+  --genereal-font: 'Poppins';
+ }
 /*#region body*/
 html {
   scroll-behavior: smooth;
@@ -10,7 +19,7 @@ html {
 body {
   margin: 0;
   width: 100%;
-
+  font-family: var(--genereal-font), sans-serif;
 }
 
 /*#endregion body */
@@ -127,7 +136,7 @@ body {
 
 .homepage_general-info .general-Info_colorTextPlate {
   margin: 0% 6% 0% 6%;
-  background-color: #ffcccc; /* choose your preferred color */
+  background-color: var(--box-color); /* choose your preferred color */
   padding: 1em;
   font-size: 20px;
   transform: translateY(-30%);
@@ -216,7 +225,7 @@ body {
 
 /*#region Homepage Ausstattung*/
 .homepage_ausstattung {
-  background-color: darkgreen;
+  background-color: var(--ausstattung-bg-color);
 }
 
 .homepage_ausstattung p {
@@ -232,6 +241,21 @@ body {
 
 .homepage_ausstattung .subheadline {
   font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.homepage_ausstattung .ausstattung-columns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.homepage_ausstattung .ausstattung-columns div{
+
+}
+
+.homepage_ausstattung ul {
+  color: bisque;
+  margin-top: 0px;
 }
 
 /*#endregion Homepage Ausstattung*/
@@ -284,12 +308,34 @@ body {
 .homepage_geschichte .headline {
   text-align: center;
   font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.homepage_geschichte .subheadline {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.homepage_geschichte .geschichte-paragraph {
+  display: flex;
+  margin: 0px 40px 0px 40px;
+}
+
+.homepage_geschichte .geschichte-paragraph .paragraph{
+  margin: 0px 14px 0px 14px;
+  text-align: justify;
+}
+
+.homepage_geschichte .geschichte-paragraph .middle-paragraph{
+  margin: 0px 35px 0px 35px;
+  text-align: justify;
 }
 /*#endregion Homepage Geschichte*/
 
 /*#region Homepage Footer*/
 .homepage_footer {
-  background-color: #b91515;
+  background-color: #FADDBB;
   padding: 2% 0% 2% 0%;
   display: flex;
 }
@@ -300,8 +346,25 @@ body {
   align-content: center;
 }
 
-.homepage_footer .headline {
-  text-align: center;
-  font-size: 30px;
+.homepage_footer .footer-left p{
+  font-size: 16px;
+  margin: 4px 0px 10px 0px;
 }
+
+.homepage_footer .footer-right p{
+  font-size: 16px;
+  margin: 4px 0px 10px 0px;
+}
+
+.homepage_footer .headline {
+  text-align: center !important;
+  font-size: 30px !important;
+}
+
+.homepage_footer .footer-middle p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
 /*#endregion Homepage Footer*/
