@@ -1,16 +1,16 @@
 /**
  * @format
  */
- @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
- :root {
+:root {
   /*Colors*/
-  --box-color: #F8DCB7;
-  --ausstattung-bg-color: #3E512D;
+  --box-color: #f8dcb7;
+  --ausstattung-bg-color: #3e512d;
 
   /*Fonts*/
-  --genereal-font: 'Poppins';
- }
+  --genereal-font: "Poppins";
+}
 /*#region body*/
 html {
   scroll-behavior: smooth;
@@ -92,6 +92,9 @@ body {
 /*#region HomePage Top Picuture*/
 .homepage_insidePageMenu {
   background-image: url("../images/summer/roi_start_slider-neu2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 5% 0% 10% 5%;
   display: flex;
 }
@@ -109,11 +112,11 @@ body {
 
 .homepage_insidePageMenu .insidePageMenu_links a {
   text-decoration: none;
-  color: blue; 
+  color: blue;
   font-size: 25px;
 }
 
-.homepage_insidePageMenu .insidePageMenu_links a:hover{
+.homepage_insidePageMenu .insidePageMenu_links a:hover {
   color: lightblue;
 }
 
@@ -147,11 +150,13 @@ body {
   margin: 0% 6% 0% 6%;
   padding: 2px;
   background-color: aqua;
+  align-items: center;
+  justify-content: center;
 }
 
 .homepage_general-info .general-info-pic {
   background-color: #f2f2f2;
-  padding: 30px 30px 30px 12%;
+  padding: 30px;
   text-align: right;
 }
 
@@ -195,7 +200,6 @@ body {
 /*#region Homepage Wohnungen*/
 
 .homepage_wohnungen {
-
 }
 
 /*#region Juchee*/
@@ -249,8 +253,7 @@ body {
   justify-content: space-evenly;
 }
 
-.homepage_ausstattung .ausstattung-columns div{
-
+.homepage_ausstattung .ausstattung-columns div {
 }
 
 .homepage_ausstattung ul {
@@ -268,6 +271,9 @@ body {
 
 .homepage_wellness .wellness-top-pic {
   background-image: url("../images/accomondations/roi_wellness4-642x335.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-bottom: 200px;
   padding-top: 3%;
 }
@@ -279,13 +285,25 @@ body {
   margin-top: 0;
 }
 
+.homepage_wellness .wellness-lowerSection {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage_wellness .wellness-lowerSection img {
+  max-height: 500px;
+  transform: translateY(-19%);
+}
+
 .homepage_wellness .wellness-lowerSection p {
-  margin-left: 12%;
-  margin-right: 12%;
+  max-width: 12%;
+  min-width: 300px;
+  margin-left: 10px;
   padding: 1.5% 3% 1.5% 3%;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   background-color: antiquewhite;
+  transform: translateY(-22%);
 }
 /*#endregion Homepage Wellness*/
 
@@ -296,7 +314,55 @@ body {
 
 .homepage_garten .headline {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
+}
+
+.homepage_garten img {
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.homepage_garten .garten-upperSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage_garten .garten-lowerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage_garten .garten-lowerSection-imageBox {
+  display: flex;
+  flex-direction: column;
+}
+.homepage_garten .garten-lowerSection-imageBox .imageBox-2 {
+  transform: translate(6%, -15%);
+  z-index: 1;
+}
+
+.homepage_garten .garten-upperSection p {
+  max-width: 12%;
+  min-width: 300px;
+  margin: 0px 10px 0px 10px;
+  padding: 1.5% 3% 1.5% 3%;
+  text-align: center;
+  font-size: 18px;
+  background-color: antiquewhite;
+}
+
+.homepage_garten .garten-lowerSection p {
+  max-width: 12%;
+  min-width: 300px;
+  margin: 0px 10px 0px 10px;
+  padding: 1.5% 3% 1.5% 3%;
+  text-align: center;
+  font-size: 18px;
+  color: bisque;
+  background-color: #3e512d;
+  transform: translateY(-10%);
 }
 /*#endregion Homepage Garten*/
 
@@ -320,51 +386,103 @@ body {
 .homepage_geschichte .geschichte-paragraph {
   display: flex;
   margin: 0px 40px 0px 40px;
+  justify-content: center;
 }
 
-.homepage_geschichte .geschichte-paragraph .paragraph{
+.homepage_geschichte .geschichte-paragraph p {
+  max-width: 21%;
+}
+
+.homepage_geschichte .geschichte-paragraph .paragraph {
   margin: 0px 14px 0px 14px;
   text-align: justify;
 }
 
-.homepage_geschichte .geschichte-paragraph .middle-paragraph{
+.homepage_geschichte .geschichte-paragraph .middle-paragraph {
   margin: 0px 35px 0px 35px;
   text-align: justify;
 }
 /*#endregion Homepage Geschichte*/
 
 /*#region Homepage Footer*/
-.homepage_footer {
-  background-color: #FADDBB;
+.homepage_footer .footer-upperSection {
+  position: relative;
+  text-align: center;
+  padding: 75px 0 100px 0;
+}
+
+.homepage_footer .footer-upperSection::before  {
+  content: '';
+  background: url("../images/summer/roi_start_slider-neu3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: brightness(40%) opacity(70%);
+  z-index: -1;
+}
+
+.homepage_footer .footer-upperSection p {
+  color: #f8dcb7;
+  font-size: 30px;
+}
+
+.homepage_footer .footer-upperSection .footer-buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage_footer .footer-upperSection .footer-buttonBox button {
+  background-color: white;
+  color: #3e512d;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  margin: 0 5px 0 5px;
+  font-size: 20px;
+}
+.homepage_footer .footer-upperSection .footer-buttonBox button:hover{
+  background-color: #3e512d;
+  transition: 350ms;
+  color: #f8dcb7;
+  margin: 0 5px 0 5px;
+}
+
+
+.homepage_footer .footer-lowerSection {
+  background-color: #faddbb;
   padding: 2% 0% 2% 0%;
   display: flex;
 }
 
-.homepage_footer div {
+.homepage_footer .footer-lowerSection div {
   flex: 33%;
   text-align: center;
   align-content: center;
 }
 
-.homepage_footer .footer-left p{
+.homepage_footer .footer-lowerSection .footer-left p {
   font-size: 16px;
   margin: 4px 0px 10px 0px;
 }
 
-.homepage_footer .footer-right p{
+.homepage_footer .footer-lowerSection .footer-right p {
   font-size: 16px;
   margin: 4px 0px 10px 0px;
 }
 
-.homepage_footer .headline {
+.homepage_footer .footer-lowerSection .headline {
   text-align: center !important;
   font-size: 30px !important;
 }
 
-.homepage_footer .footer-middle p {
+.homepage_footer .footer-lowerSection .footer-middle p {
   font-size: 14px;
   margin-top: 10px;
 }
-
 
 /*#endregion Homepage Footer*/
