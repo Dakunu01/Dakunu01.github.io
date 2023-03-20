@@ -30,7 +30,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  background: green;
+  background: #6E6760;
   z-index: 1;
   width: 100%;
 }
@@ -51,13 +51,14 @@ body {
 /* Add a black background color to the top navigation */
 .topnav_links {
   width: 72%;
-  background-color: #b91515;
+  background-color: #6E6760;
   overflow: hidden;
   align-items: center;
 }
 
 .topnav_menu {
-  background-color: aqua;
+  background-color: #6E6760;
+  color: #FADDBB;
   display: flex;
   justify-content: flex-end;
   float: right;
@@ -69,7 +70,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav_links a {
   float: left;
-  color: #f2f2f2;
+  color: #FADDBB;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -78,25 +79,38 @@ body {
 
 /* Change the color of links on hover */
 .topnav_links a:hover {
-  background-color: #ddd;
+  background-color: #80776f;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav_links a.active {
-  background-color: #04aa6d;
-  color: white;
+  background-color: #6E6760;
+  color: #FADDBB;
 }
 /*#endregion topnav*/
 
 /*#region HomePage Top Picuture*/
 .homepage_insidePageMenu {
+
+position: relative;  
+padding: 5% 0% 10% 5%;
+  display: flex;
+}
+
+.homepage_insidePageMenu::before {
+  content: "";
   background-image: url("../images/summer/roi_start_slider-neu2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 5% 0% 10% 5%;
-  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: brightness(85%) opacity(95%);
+  z-index: -1;
 }
 
 .homepage_insidePageMenu .insidePageMenu_links ul {
@@ -105,24 +119,24 @@ body {
 
 .homepage_insidePageMenu .insidePageMenu_links li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 180px;
   margin-top: 3px;
   text-decoration: none;
 }
 
 .homepage_insidePageMenu .insidePageMenu_links a {
   text-decoration: none;
-  color: blue;
+  color: #42392e;
   font-size: 25px;
 }
 
 .homepage_insidePageMenu .insidePageMenu_links a:hover {
-  color: lightblue;
+  color: #806d58;
 }
 
 .homepage_insidePageMenu p {
   font-size: 50px;
-  color: purple;
+  color: #FADDBB;
   margin-top: 0;
 }
 
@@ -134,28 +148,30 @@ body {
 
 /*#region Homepage General Info*/
 .homepage_general-info {
-  background-color: #b91515;
+  background-color: white;
 }
 
 .homepage_general-info .general-Info_colorTextPlate {
-  margin: 0% 6% 0% 6%;
-  background-color: var(--box-color); /* choose your preferred color */
-  padding: 1em;
-  font-size: 20px;
+  background-color: var(--box-color);
+  padding: 1em 3em 1em 3em;
   transform: translateY(-30%);
+  font-size: 20px;
+
+  max-width: 1400px;
+  margin: auto;
 }
 
 .homepage_general-info .general-Info-lowerSection {
   display: flex;
+  align-items: center;
+
   margin: 0% 6% 0% 6%;
   padding: 2px;
-  background-color: aqua;
-  align-items: center;
-  justify-content: center;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .homepage_general-info .general-info-pic {
-  background-color: #f2f2f2;
   padding: 30px;
   text-align: right;
 }
@@ -167,7 +183,6 @@ body {
 
 /*#region Homepage Genereal Info - Headlines*/
 .homepage_general-info .general-Info-headlines {
-  background-color: #ccffcc; /* choose your preferred color */
   padding: 1em;
 }
 
@@ -187,12 +202,13 @@ body {
 /*#endregion Homepage Genereal Info - Headlines*/
 
 .homepage_general-info .general-Info_textContainer {
-  margin-left: 12%;
-  margin-right: 12%;
-  padding: 1.5% 3% 1.5% 3%;
+  padding: 2em 5em 2em 5em;
   text-align: center;
   font-size: 22px;
   background-color: antiquewhite;
+
+  max-width: 1400px;
+  margin: auto;
 }
 
 /*#endregion Homepage General Info*/
@@ -200,28 +216,67 @@ body {
 /*#region Homepage Wohnungen*/
 
 .homepage_wohnungen {
-}
-
-/*#region Juchee*/
-.homepage_wohnungen .hp_wohnungen_juchee {
-  background-color: aquamarine;
+  background-color: #E2E5E0;
 }
 
 .homepage_wohnungen .headline {
   padding-left: 20px;
+  margin-right: auto;
   font-size: 30px;
+}
+
+.homepage_wohnungen img {
+  max-width: 100%;
+  max-height: 480px;
+}
+
+.homepage_wohnungen .wohnung-top {
+  display: flex;
+  margin: auto;
+  max-width: 1500px;
+}
+
+.homepage_wohnungen .wohnung-top .right-container {
+  display: flex;
+  margin-right: 30px;
+}
+
+.homepage_wohnungen .wohnung-top .right-container p {
+  margin-right: 15px;
+}
+
+.homepage_wohnungen .wohnung-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage_wohnungen .wohnung-content p {
+  max-width: 12%;
+  min-width: 300px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 1.5% 3% 1.5% 3%;
+  text-align: center;
+  font-size: 18px;
+  background-color: antiquewhite;
+}
+
+/*#region Juchee*/
+.homepage_wohnungen .hp_wohnungen_juchee {
+  padding-bottom: 20px;
 }
 /*#endregion Juchee*/
 
 /*#region Kaminstube*/
 .homepage_wohnungen .hp_wohnungen_kaminstube {
-  background-color: bisque;
+  padding-bottom: 50px;
 }
 /*#endregion Kaminstube*/
 
 /*#region Hofstueberl*/
 .homepage_wohnungen .hp_wohnungen_hofstueberl {
-  background-color: blueviolet;
+  padding-bottom: 20px;
 }
 /*#endregion Hofstueberl*/
 
@@ -250,10 +305,11 @@ body {
 
 .homepage_ausstattung .ausstattung-columns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.homepage_ausstattung .ausstattung-columns div {
+.homepage_ausstattung .ausstattung-columns .column {
+  margin: 0px 120px 0px 120px;
 }
 
 .homepage_ausstattung ul {
@@ -265,7 +321,7 @@ body {
 
 /*#region Homepage Wellness*/
 .homepage_wellness {
-  background-color: #ccffcc;
+  background-color: white;
   padding-bottom: 2%;
 }
 
@@ -309,7 +365,7 @@ body {
 
 /*#region Homepage Garten*/
 .homepage_garten {
-  background-color: aqua;
+  background-color: white;
 }
 
 .homepage_garten .headline {
@@ -368,7 +424,8 @@ body {
 
 /*#region Homepage Geschichte*/
 .homepage_geschichte {
-  background-color: blueviolet;
+  background-color: #ebe9ea;
+  margin-bottom: 20px;
 }
 
 .homepage_geschichte .headline {
@@ -385,8 +442,8 @@ body {
 
 .homepage_geschichte .geschichte-paragraph {
   display: flex;
-  margin: 0px 40px 0px 40px;
   justify-content: center;
+  align-items: center;
 }
 
 .homepage_geschichte .geschichte-paragraph p {
@@ -395,11 +452,13 @@ body {
 
 .homepage_geschichte .geschichte-paragraph .paragraph {
   margin: 0px 14px 0px 14px;
+  max-width: 500px;
   text-align: justify;
 }
 
 .homepage_geschichte .geschichte-paragraph .middle-paragraph {
   margin: 0px 35px 0px 35px;
+  max-width: 500px;
   text-align: justify;
 }
 /*#endregion Homepage Geschichte*/
@@ -411,8 +470,8 @@ body {
   padding: 75px 0 100px 0;
 }
 
-.homepage_footer .footer-upperSection::before  {
-  content: '';
+.homepage_footer .footer-upperSection::before {
+  content: "";
   background: url("../images/summer/roi_start_slider-neu3.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -445,13 +504,12 @@ body {
   margin: 0 5px 0 5px;
   font-size: 20px;
 }
-.homepage_footer .footer-upperSection .footer-buttonBox button:hover{
+.homepage_footer .footer-upperSection .footer-buttonBox button:hover {
   background-color: #3e512d;
   transition: 350ms;
   color: #f8dcb7;
   margin: 0 5px 0 5px;
 }
-
 
 .homepage_footer .footer-lowerSection {
   background-color: #faddbb;
